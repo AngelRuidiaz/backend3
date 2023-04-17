@@ -4,7 +4,7 @@ require('dotenv').config()
 
 const connect= async()=>{
     try {
-        await mongoose.connect(process.env.MONGOO_CNN);
+        await mongoose.connect(process.env.MONGO_CNN);
         console.log('base de datos ON')
     } catch {
         console.log('Error de conexion')
